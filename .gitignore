@@ -1,3 +1,9 @@
+#Ignore gdrive files
+*.ini
+
+#Ignore executable files
+*.exe
+
 # Logs
 logs
 *.log
