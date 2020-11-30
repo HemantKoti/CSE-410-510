@@ -5,8 +5,8 @@ import os
 ######################################
 # NECESSARY FOR THE PROGRAM TO RUN
 # Use project/local path (i.e. 'malware/20151207/20151207_ba5a681820e2419b2a070937208ca566.js')
-path = 'malware/HTML 202011/7fc766d8eddb6fe6018580e9e84d9b3314b1f3aa7d830f0f73a4a7db698f5cd7.js'
-apiKey = '5df87efe02270995cddef9c4b02aa37940da98223aa55c3396a08e20bb3bc791'
+path = ''
+apiKey = ''
 ######################################
 
 
