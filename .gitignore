@@ -4,6 +4,7 @@
 # Ignored files 
 malware/20151229/20151229_6395942fee4da6f18df8ba0e8b9f61a2/wasm.js
 malware/20151229/20151229_72518bc95c8c1b33ab9b07cfcb2935de/test.html
+main.py
 
 #Ignore gdrive files
 *.ini

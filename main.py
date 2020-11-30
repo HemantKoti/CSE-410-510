@@ -5,8 +5,8 @@ import os
 ######################################
 # NECESSARY FOR THE PROGRAM TO RUN
 # Use project/local path (i.e. 'malware/20151207/20151207_ba5a681820e2419b2a070937208ca566.js')
-path = ''
-apiKey = ''
+path = 'malware/HTML 202011/7fc766d8eddb6fe6018580e9e84d9b3314b1f3aa7d830f0f73a4a7db698f5cd7.js'
+apiKey = '5df87efe02270995cddef9c4b02aa37940da98223aa55c3396a08e20bb3bc791'
 ######################################
 
 
@@ -19,12 +19,14 @@ data = response.json()
 
 # Make another request to pass in resource for scan results
 url = 'https://www.virustotal.com/vtapi/v2/file/report'
-params = {'apikey': '05378c1edd93767d04e84b171bd3a0dc098c9717e0132a588bed7239ffd0442c', 'resource': data['resource']}
+params = {'apikey': '05378c1edd93767d04e84b171bd3a0dc098c9717e0132a588bed7239ffd0442c',
+          'resource': data['resource']}
 response = requests.get(url, params=params)
 print(response.json())
 scans = response.json()['scans']
 
-res = [(k, scans[k]['detected']) for k in scans] # List of 2-tuples: (Scan, Detected)
+res = [(k, scans[k]['detected'])
+       for k in scans]  # List of 2-tuples: (Scan, Detected)
 
 
 # Ask OS to make directory if it doesnt exist
